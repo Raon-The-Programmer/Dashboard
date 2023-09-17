@@ -1,0 +1,37 @@
+/* Common styles for all screen sizes */
+/* ... */
+
+/* Media query for small screens (up to 576px) */
+@media (max-width: 576px) {
+  /* Adjust styles for small screens here */
+  .container {
+    padding: 10px;
+  }
+
+  .card {
+    margin: 10px 0;
+    padding: 10px;
+  }
+}
+
+/* Media query for medium screens (577px - 992px) */
+@media (min-width: 577px) and (max-width: 992px) {
+  /* Adjust styles for medium screens here */
+  .container {
+    padding: 20px;
+  }
+
+  .card {
+    margin: 20px 0;
+    padding: 20px;
+  }
+}
+
+/* Media query for large screens (993px and above) */
+@media (min-width: 993px) {
+  /* Adjust styles for large screens here */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
