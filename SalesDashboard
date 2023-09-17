@@ -1,0 +1,25 @@
+// src/components/SalesDashboard.js
+import React, { useState } from 'react';
+import SalesChart from './SalesChart';
+import SalesTable from './SalesTable';
+
+const SalesDashboard = () => {
+  const [salesData, setSalesData] = useState([
+    { date: '2023-01-01', product: 'Product A', amount: 1000 },
+    { date: '2023-01-02', product: 'Product B', amount: 1500 },
+    { date: '2023-01-03', product: 'Product A', amount: 1200 },
+    // ... more sales data ...
+  ]);
+
+  // Define chart data here using 'react-chartjs-2'
+
+  return (
+    <div>
+      <h1>Sales Dashboard</h1>
+      <SalesChart data={/* pass chart data here */} />
+      <SalesTable salesData={salesData} />
+    </div>
+  );
+};
+
+export default SalesDashboard;
